@@ -8,7 +8,7 @@ from utils.timeit import timeit
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("year", type=int, choices=range(2015, 2025))
-    parser.add_argument("day", type=int, choices=range(1, 32))
+    parser.add_argument("day", type=int, choices=range(1, 26))
     args = parser.parse_args()
 
     day = f"{args.day:02d}"
